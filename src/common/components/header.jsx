@@ -5,39 +5,27 @@ import fuel from '../../assets/images/gas-pump.svg'
 import arrow from '../../assets/images/arrow-down.svg'
 import Web3 from 'web3'
 
+import {ethEnabled ,handleConnect ,getAccount}  from '../../web3/action/index'
 
 
-async function getAccount(){
-    if (window.ethereum) {
-        await window.ethereum.send('eth_requestAccounts');
-        window.web3 = new Web3(window.ethereum);
-        var accounts = await window.web3.eth.getAccounts()
-        return accounts[0]
-    } else {
-        return "Not Connected"
-    }
-}
 
 const Header = () => {
-    useEffect(() => {
-        getAccount()
-    }, [])
     var [address, setAddress]=useState([])
-   
-    getAccount().then((val)=> {
-        console.log(val)
-        setAddress(val)
-    })
-    const [visible, setVisible] = useState(false)
-    const dropdown=()=>{
-        if(visible === false){
-            setVisible(true)
-        }else{
-            setVisible(false)
-        }
+    var [connect, setConnect]=useState(false)
+    ethEnabled();
+    handleConnect();
+    getAccount();
+    const connectAcc =()=>{
+        getAccount().then((val)=>{
+            setAddress(val)
+            setConnect(true)
+            
+        })
     }
-    const displayAcc=address[0]+address[1]+address.slice(-4)
+    const [visible, setVisible] = useState(false)
 
+    const displayAcc=address[0]+address[1]+address.slice(-4)
+    
     return (
         <div className="navbar">
             <nav>
@@ -45,8 +33,10 @@ const Header = () => {
                 <ul>
                     <li className="active">Buy ASVA</li>
                     <li>0 ETH</li>
-                    <li>{displayAcc}</li>
-                    <li className="fuel "onClick={dropdown}><img src={fuel} alt="" />95 <img src={arrow} alt="" />
+                    {
+                     connect ? <li >{displayAcc}</li> : <button className="connect" onClick={connectAcc}>connect</button>
+                    }
+                    <li className="fuel "onClick={()=>setVisible(!visible)}><img src={fuel} alt="" />95 <img src={arrow} alt="" />
                        { visible ?
                         <ul className="dropdown">
                             <span>Select Gas Setting</span>

@@ -44,7 +44,14 @@ nav ul li{
     }
     
 }
-
+.connect{
+    border: none;
+    padding: 0 5px;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color: #272727;
+    color: #FFFFFF;
+}
 li.active{
     background: #FF0074 0% 0% no-repeat padding-box;
     border-radius: 27px;

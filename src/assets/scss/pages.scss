@@ -31,3 +31,24 @@
 }
 
 
+//hash -alert
+.alert-container-hash{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin:10px 20px ;
+    z-index: 1;
+}
+.alert-hash{
+    width: auto !important;
+
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        color: #FFFFFF;
+        text-transform: capitalize;
+        &:hover{
+            color: #FF0074;
+        }
+    }
+}

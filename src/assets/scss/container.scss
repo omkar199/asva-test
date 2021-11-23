@@ -77,11 +77,10 @@
        }
        button{
            padding: 0 15px;
-           margin-top: 10px;
-           position: relative;
-           float: right;
-           top:0px;
-           left:-40px;
+           margin: 15px;
+           bottom: 0;
+           right: 0;
+           position: absolute;
            border-radius: 5px;
            color: #FFFFFF;
            background-color: #FF0074;
@@ -133,7 +132,12 @@
         background-color: #272727;
         border-radius: 16px;
         
-        
+        p{
+            font-size: 10px;
+            color: red;
+            margin: 0;
+            padding-top: 10px;
+        }
         button{
             position: relative;
             float: right;
@@ -224,7 +228,7 @@
     .vault_static{
         z-index: -1;
         padding: 25px 20px ;
-        margin: 50px 15px;
+        margin: 75px 15px;
         width: 400px;
         position: relative;
         float: right;
