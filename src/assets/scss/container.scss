@@ -1,0 +1,264 @@
+.vault-container{
+    position: absolute;
+    background: #181818 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF1A;
+    border-radius: 20px;
+    opacity: 1;
+    color: white;
+    left: 425px;
+    width: 475px;
+    height: 500px;
+    text-transform: capitalize;
+    padding: 0 10px;
+    p{
+        margin: 10px;
+        font-size:20px;
+        letter-spacing: 1px;
+    }
+}   
+ .vault_head_left{
+     position: absolute;
+        color: #FF0074;
+        float: left;
+        
+        
+    }
+    .vault_head_right{
+        position: absolute;
+        right: 0;
+        color: #FFFFFF;
+        float: right;
+        text-transform: uppercase;
+        
+        
+    }
+    .your_staked{
+        position: absolute;
+        top:50px;
+        left: 0;
+        margin-left: 10px;
+        padding: 20px;
+        float: left;
+        background: #272727 0% 0% no-repeat padding-box;
+        border: 1px solid #FFFFFF4D;
+        border-radius: 10px;
+        p{
+            color: #FF0074;
+        }
+
+    }
+    .rewards{
+        position: absolute;
+        top: 50px;
+        right: 0;
+        padding: 20px;
+        width: 200px;
+        height: 115px;
+        margin-right: 20px;
+        float: right;
+        background: #272727 0% 0% no-repeat padding-box;
+        border: 1px solid #FFFFFF4D;
+        border-radius: 10px;
+        span{
+            p{
+                float: right;
+                position: relative;
+                top: -15px;
+                color: #FF0074;
+            }
+        }
+        
+       .amount_vault{
+           color: #FFFFFF;
+           position: absolute;
+           right: 20px;
+           font-size: 10px;
+           opacity: 0.7;
+       }
+       button{
+           padding: 0 15px;
+           margin: 15px;
+           bottom: 0;
+           right: 0;
+           position: absolute;
+           border-radius: 5px;
+           color: #FFFFFF;
+           background-color: #FF0074;
+           border: 0px;
+           cursor: pointer;
+       }
+    }
+
+    .toggel_stack{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:170px;
+        height: auto;
+        width: 90%;
+        margin: 10px 10px;
+        border: 2px solid #5E062E;
+        // opacity: 0.5;
+        border-radius: 10px;
+        button{
+            padding:10px 0 ;
+            width: 80%;
+            color: #FFFFFF;
+            background-color:#181818 ;
+            border: none;
+            font-weight: bold;
+            opacity: 1 !important;
+            cursor: pointer;
+            border-radius: 10px;
+            outline: none;
+            text-transform: capitalize;
+            &.active{
+                background-color: #5E062E;
+            }
+            span{
+                text-transform: uppercase;
+            }
+            }
+    }
+
+    .bal-add{
+        position: absolute;
+        top: 250px;
+        margin: 0  10px;
+        width: 90%;
+        padding: 10px;
+        height: auto;
+        background-color: #272727;
+        border-radius: 16px;
+        
+        p{
+            font-size: 10px;
+            color: red;
+            margin: 0;
+            padding-top: 10px;
+        }
+        button{
+            position: relative;
+            float: right;
+            padding: 0 10px;
+            border-radius:5px;
+            outline: none;
+            border: none;
+            color: #FFFFFF;
+            background: #FF0074;
+            opacity: 1 !important;
+            cursor: pointer;
+        }
+        input{
+            width: 90%;
+            background:transparent;
+            border: none;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            
+        }
+    }
+    .bal-add-buttom{
+        position: absolute;
+        margin: 20px 15px;
+        top: 320px;
+        lable{
+            color: #FFFFFF;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            div{
+                cursor: pointer;
+                background: #343434 0% 0% no-repeat padding-box;
+                border: 1px solid #FF007480;
+                border-radius: 10px;
+                opacity: 1;
+                width: 100px;
+                margin-right:5px ;
+                padding: 5px 0px;
+                p{
+                     
+                    margin: 0;
+                    font-size: 10px;
+                }
+                span{
+                    margin-left: 15px;
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+    .extra-bottom{
+        top: 340px;
+    }
+    .unstack{
+        color: #FFFFFF;
+        opacity: 0.3;
+        font-size: 25px;
+    }
+    .stake{
+        position: absolute;
+        bottom: 0;
+        margin: 20px 10px;
+        width: 90%;
+        padding: 15px 0;
+        border: none;
+        color: #FFFFFF;
+        background: #FF0074 0% 0% no-repeat padding-box;
+        border-radius: 15px;
+        opacity: 1; 
+        text-transform: capitalize;
+        font-weight: bold;
+        
+    }
+
+
+
+
+
+
+
+
+
+    // vault static container
+
+    .vault_static{
+        z-index: -1;
+        padding: 25px 20px ;
+        margin: 75px 15px;
+        width: 400px;
+        position: relative;
+        float: right;
+        top:1px;
+        background: #181818 0% 0% no-repeat padding-box;
+        border: 1px solid #FFFFFF1A;
+        border-radius: 32px;
+        opacity: 1;
+        span{
+            text-align: left;
+            font-size: 20px;
+            color: #FF0074;
+        }
+        p{
+            text-align: left;
+            font-size: 12px;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+        .inner_static{
+            span{
+                color: #FFFFFF;
+                font-size: 12px;
+            }
+            p{
+                position: relative;
+                top:-20px;
+                margin-left: 12px;
+            }
+        }
+    }
