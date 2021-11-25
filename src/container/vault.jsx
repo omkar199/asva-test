@@ -217,16 +217,16 @@ const Vault = () => {
                         <span>30 days</span>
                     </div>
                     <div>
-                        <p>12%</p>
-                        <span>30 days</span>
+                        <p>14%</p>
+                        <span>60 days</span>
                     </div>
                     <div>
-                        <p>12%</p>
-                        <span>30 days</span>
+                        <p>16%</p>
+                        <span>90 days</span>
                     </div>
                     <div>
-                        <p>12%</p>
-                        <span>30 days</span>
+                        <p>18%</p>
+                        <span>120 days</span>
                     </div>
                 </div>
             </div>
