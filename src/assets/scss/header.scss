@@ -10,6 +10,17 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #000000;
 }
+//lodder
+.loder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #FF0074;
+    p{
+        font-size: 30px;
+    }
+}
+//header
 nav{
     background-color: #090909;
     color: #FFFFFF;
